@@ -1,0 +1,10 @@
+@import "../../global.scss";
+
+.popover__item{
+    cursor: pointer;
+    padding: 10px 0px 10px 0px;
+}
+
+.popover__item:hover{
+    text-decoration: underline;
+}

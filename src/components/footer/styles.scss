@@ -1,0 +1,26 @@
+@import "../../global.scss";
+
+.footer{
+    background-color: $secondary-dark;
+    color: $primary-light!important;
+}
+
+.footer__heading{
+    color: $primary-light!important;
+    padding-bottom: 20px;
+    cursor: pointer;
+}
+
+.footer__heading:hover{
+    text-decoration: underline;
+}
+
+.footer__item{
+    cursor: pointer;
+    padding: 5px 0px 5px 0px;
+    color: $primary-light!important;
+}
+
+.footer__item:hover{
+    text-decoration: underline;
+}
