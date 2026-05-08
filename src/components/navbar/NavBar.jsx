@@ -7,8 +7,6 @@ import {
 	Typography,
 } from '@mui/material';
 
-import Logo from "../../assets/icons/lusidpay_logo.svg";
-
 import "./styles.scss";
 
 const NavBar = () => {
@@ -43,18 +41,31 @@ const NavBar = () => {
 			<Container maxWidth="xl">
 				<Box
 					className="flexCenterSBRow"
-					sx={{ maxHeight: "80px", padding: "15px 0px" }}>
+					sx={{ maxHeight: "100px", padding: "22px 0px" }}>
 
-					<Box sx={{ cursor: "pointer" }} onClick={() => navigate("/")}>
-						<img src={Logo} alt="lusid-logo" style={{ width: "180px" }} />
+					<Box sx={{ cursor: 'pointer' }} onClick={() => navigate('/')}>
+						<Typography
+							sx={{
+								fontWeight: 700,
+								fontSize: '1.5rem',
+								letterSpacing: '-0.3px',
+								color: '#0f1933',
+								lineHeight: 1,
+							}}
+						>
+							DBE Narrative
+							<Box component="span" sx={{ color: '#0d67e3' }}>.com</Box>
+						</Typography>
 					</Box>
 
-					<Typography sx={{ fontSize: "0.875rem", color: "#56687a", fontWeight: 500 }}>
-						Powered by{' '}
-						<Box component="span" sx={{ fontWeight: 700, color: "#0f1933" }}>
+					<Box sx={{ display: 'flex', alignItems: 'baseline', gap: '6px' }}>
+						<Typography sx={{ fontSize: '0.75rem', color: '#56687a', fontWeight: 500 }}>
+							Powered by
+						</Typography>
+						<Typography sx={{ fontSize: '1rem', fontWeight: 700, color: '#0f1933' }}>
 							Lusid Certify
-						</Box>
-					</Typography>
+						</Typography>
+					</Box>
 
 				</Box>
 			</Container>
